@@ -1,12 +1,17 @@
-# React + Vite
+# Real-time Chat App with React and Firebase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Project Structure
 
-Currently, two official plugins are available:
+#### Firebase Authenticator
+- For login and registration. This will create
+a userID which will be stored in the Database.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Firestore Database
+- For storing user details, chats and messages. 
+The DB will have a users collection, chats collection,
+userChats collection.
 
-## Expanding the ESLint configuration
+#### Firebase Storage
+- For uploading avatars and chat images which will
+return the image URL which will be stored in the Database
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
