@@ -29,9 +29,9 @@ const Detail = () => {
   return (
     <div className='detail'>
       <div className="user">
-        <img src="./avatar.png" alt="Profile" />
+        <img src="./dp.jpg" alt="Profile" />
         <h2>Mazode</h2>
-        <p>Random user description goes here.</p>
+        <p>Hey there, I am using Chatty</p>
       </div>
       <div className="info">
         <div className="option">

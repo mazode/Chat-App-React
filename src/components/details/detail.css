@@ -62,15 +62,15 @@
     }
 
     .info {
-        padding: 20px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         gap: 15px;
-        overflow-y: auto;
+        overflow: scroll;
         max-height: calc(100vh - 250px);
 
         &::-webkit-scrollbar {
-            width: 6px;
+            width: 5px;
         }
 
         &::-webkit-scrollbar-track {

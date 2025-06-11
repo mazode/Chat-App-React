@@ -13,7 +13,7 @@ const ChatList = () => {
             id: 1,
             name: 'Jane Doe',
             lastMessage: 'Hello',
-            avatar: './avatar.png',
+            avatar: './user.png',
             time: '1 min ago',
             unread: 2
         },
@@ -21,7 +21,7 @@ const ChatList = () => {
             id: 2,
             name: 'John Smith',
             lastMessage: 'How are you?',
-            avatar: './avatar.png',
+            avatar: './user.png',
             time: '5 mins ago',
             unread: 0
         },
@@ -29,7 +29,7 @@ const ChatList = () => {
             id: 3,
             name: 'Alice Johnson',
             lastMessage: 'See you tomorrow!',
-            avatar: './avatar.png',
+            avatar: './user.png',
             time: '1 hour ago',
             unread: 1
         }

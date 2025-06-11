@@ -8,28 +8,28 @@ const Chat = () => {
   const [messages, setMessages] = useState([
     {
       id: 1,
-      text: "Random text for message",
+      text: "Hi",
       sender: "other",
       time: "1 min ago",
       image: null
     },
     {
       id: 2,
-      text: "Random text for message",
+      text: "Hey, How's it going",
       sender: "me",
       time: "1 min ago",
       image: null
     },
     {
       id: 3,
-      text: "Random text for message",
+      text: "I am doing great, how about you",
       sender: "other",
       time: "1 min ago",
       image: null
     },
     {
       id: 4,
-      text: "Random text for message",
+      text: "Me too",
       sender: "me",
       time: "1 min ago",
       image: "https://images.unsplash.com/photo-1747330721960-681faaf7a92a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -89,10 +89,10 @@ const Chat = () => {
     <div className='chat'>
       <div className="top">
         <div className="user">
-          <img src="./avatar.png" alt="User avatar" />
+          <img src="./dp.jpg" alt="User avatar" />
           <div className="texts">
             <span>Mazode</span>
-            <p>Random user description goes here</p>
+            <p>Hey there, I am using Chatty</p>
           </div>
         </div>
         <div className="icons">
@@ -104,7 +104,7 @@ const Chat = () => {
       <div className="center">
         {messages.map(message => (
           <div key={message.id} className={`message ${message.sender === 'me' ? 'own' : ''}`}>
-            {message.sender !== 'me' && <img src="./avatar.png" alt="User avatar" />}
+            {message.sender !== 'me' && <img src="./user.png" alt="User avatar" />}
             <div className="texts">
               {message.image && <img src={message.image} alt="Shared content" />}
               {message.text && <p>{message.text}</p>}
